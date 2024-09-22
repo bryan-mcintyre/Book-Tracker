@@ -49,7 +49,7 @@ const resolvers = {
             }
             throw AuthenticationError
         },
-        deleteBook: async (parent, { book }, context) => {
+        removeBook: async (parent, { book }, context) => {
             if(context.user) {
                 return User.findOneAndUpdate(
                     { _id: context.user.id },
