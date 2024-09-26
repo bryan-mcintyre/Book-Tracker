@@ -1,10 +1,10 @@
-const typeDefs = `
+const typeDefs = `#graphql
     type User {
         _id: ID
         username: String
         email: String
         bookCount: [Int]!
-        savedBooks[Book]
+        savedBooks: [Book]
     }
 
     type Book {
