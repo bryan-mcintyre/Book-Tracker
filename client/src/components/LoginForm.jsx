@@ -36,7 +36,7 @@ const LoginForm = () => {
           password: userFormData.email
         }
       });
-      Auth.loginUser(data.loginUser.token)
+      Auth.login(data.loginUser.token)
 
     } catch (err) {
       console.error(err);
